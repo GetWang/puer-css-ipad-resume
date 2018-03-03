@@ -1,0 +1,38 @@
+{
+  "name": "puer-css-ipad-resume",
+  "version": "1.0.0",
+  "title": "puer-css-ipad-resume",
+  "description": "This is my resume with puer css iPad Pro.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GetWang/puer-css-ipad-resume.git"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "css3",
+    "resume",
+    "getwang",
+    "ipad-pro",
+    "apple-watch"
+  ],
+  "author": {
+    "name": "GetWang",
+    "url": "https://getwang.github.io",
+    "email": "wang_dresimap@qq.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GetWang/puer-css-ipad-resume/issues"
+  },
+  "homepage": "https://github.com/GetWang/puer-css-ipad-resume#readme",
+  "docs": "https://github.com/GetWang/puer-css-ipad-resume",
+  "download": "https://github.com/GetWang/puer-css-ipad-resume",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
+  }
+}

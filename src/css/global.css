@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+.ipad-color-wrapper {
+  text-align: center;
+  padding: 13px 0;
+}
+.ipad-color-wrapper .color-dots {
+  display: inline-block;
+  list-style: none;
+}
+.ipad-color-wrapper .color-dots .dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 4px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.ipad-color-wrapper .color-dots .dot.current {
+  box-shadow: 0 0 0 2px #0070c9;
+}
+.ipad-color-wrapper .color-dots .dot.gold {
+  background: #f7e8dd;
+}
+.ipad-color-wrapper .color-dots .dot.rosegold {
+  background: #facfc9;
+}
+.ipad-color-wrapper .color-dots .dot.spacegray {
+  background: #9b9ba0;
+}
+.ipad-color-wrapper .color-dots .dot.silver {
+  background: #e2e3e4;
+}
+.ipad-pro-wrapper {
+  /*display: none;*/
+  position: absolute;
+  top: 52%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+.ipad-pro-wrapper .device-frame {
+  transition: all 0.1s ease-in-out;
+}
+.ipad-pro-wrapper .device-content .homeCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('../imgs/ipad-pro-cover.jpg');
+  background-size: 100% 100%;
+  transition: all 0.4s ease-in-out;
+}
+.ipad-pro-wrapper .device-content .homeCover.open {
+  transform: translateY(-100%);
+}
+.ipad-pro-wrapper .device-content .homeCover .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+.ipad-pro-wrapper .device-content .homeCover .info.open {
+  opacity: 0;
+}
+.ipad-pro-wrapper .device-content .homeCover .info.open .title {
+  transform: scale(0);
+}
+.ipad-pro-wrapper .device-content .homeCover .info .title {
+  margin-bottom: 180px;
+  text-shadow: 0 0 10px rgba(152, 251, 152, 0.9);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 56px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in-out;
+}
+.ipad-pro-wrapper .device-content .homeCover .info .unlock-tip {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 18px;
+}
+.ipad-pro-wrapper .device-homeBtn {
+  cursor: pointer;
+}
+.apple-watch-wrapper {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  transform: translate(0, -50%);
+  /*display: none;*/
+}
+.apple-watch-wrapper .device-content .homeCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../imgs/apple-watch-cover.jpg');
+  background-size: 100% 100%;
+}
+.apple-watch-wrapper .device-content .homeCover .date {
+  position: absolute;
+  right: 11px;
+  bottom: 40px;
+  color: #fff;
+  font-size: 13px;
+}
+.apple-watch-wrapper .device-content .homeCover .time {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #fff;
+  font-size: 26px;
+}

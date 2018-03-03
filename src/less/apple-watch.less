@@ -1,0 +1,88 @@
+/* 银色 */
+@device-silver: #e2e3e4;
+@device-silver-dark: darken(@device-silver, 20%);
+@device-silver-panel: #0d0d0d;
+@device-silver-panel-light: lighten(@device-silver-panel, 2%);
+
+.device-apple-watch {
+  position: relative;
+  width: 200px;
+  height: 234px;
+  .device-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 2px 2px @device-silver-dark, inset 0 0 0 8px @device-silver;
+    background: @device-silver-panel;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 182px;
+      height: 216px;
+      margin: auto;
+      border-radius: 30px;
+      box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.75);
+    }
+    .device-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 2px solid @device-silver-panel-light;
+    }
+  }
+  .device-homeBtn {
+    position: absolute;
+    top: 52px;
+    right: -10px;
+    width: 16px;
+    height: 44px;
+    box-sizing: border-box;
+    border-left: 2px solid @device-silver-dark;
+    border-radius: 8px 4px 4px 8px / 20px 4px 4px 20px;
+    border-top-left-radius: 8px 20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 8px 20px;
+    box-shadow: inset 0 0 2px 2px @device-silver-dark;
+    background: @device-silver;
+    ul {
+      list-style: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      li {
+        width: 6px;
+        height: 2px;
+        margin-bottom: 2px;
+        background: @device-silver-dark;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .device-powerBtn {
+    position: absolute;
+    top: 120px;
+    right: -4px;
+    width: 8px;
+    height: 66px;
+    border-radius: 4px 2px 2px 4px / 10px 2px 2px 10px;
+    border-top-left-radius: 4px 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 4px 10px;
+    box-shadow: inset 0 0 1px 2px @device-silver-dark;
+    background: @device-silver;
+  }
+}

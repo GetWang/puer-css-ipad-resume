@@ -1,0 +1,80 @@
+/* 金色 */
+/* 玫瑰金 */
+/* 深空灰 */
+/* 银色 */
+.device-ipad-pro {
+  position: relative;
+  width: 804px;
+  height: 560px;
+  /* gold version */
+  /* rosegold version */
+  /* spacegray version */
+  /* silver version */
+}
+.device-ipad-pro .device-frame {
+  width: 100%;
+  height: 100%;
+  padding: 25px 62px;
+  box-sizing: border-box;
+  border-radius: 38px;
+  box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 6px #f7e8dd;
+  background: #fff;
+}
+.device-ipad-pro .device-frame .device-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 2px solid #222;
+  border-radius: 2px;
+}
+.device-ipad-pro .device-sensors {
+  position: absolute;
+  top: 50%;
+  left: 29px;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background: #666;
+}
+.device-ipad-pro .device-homeBtn {
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+  margin-top: -19px;
+  border: 2px solid #e4b08a;
+  border-radius: 50%;
+}
+.device-ipad-pro.device-gold .device-frame {
+  box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 6px #f7e8dd;
+  background: #fff;
+}
+.device-ipad-pro.device-gold .device-homeBtn {
+  border-color: #e4b08a;
+}
+.device-ipad-pro.device-rosegold .device-frame {
+  box-shadow: inset 0 0 0 2px #f6a69a, inset 0 0 0 6px #facfc9;
+  background: #fff;
+}
+.device-ipad-pro.device-rosegold .device-homeBtn {
+  border-color: #f6a69a;
+}
+.device-ipad-pro.device-spacegray .device-frame {
+  box-shadow: inset 0 0 0 2px #818187, inset 0 0 0 6px #9b9ba0;
+  background: #222;
+}
+.device-ipad-pro.device-spacegray .device-homeBtn {
+  border-color: #818187;
+}
+.device-ipad-pro.device-silver .device-frame {
+  box-shadow: inset 0 0 0 2px #c8c9cb, inset 0 0 0 6px #e2e3e4;
+  background: #fff;
+}
+.device-ipad-pro.device-silver .device-homeBtn {
+  border-color: #c8c9cb;
+}

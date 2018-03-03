@@ -1,0 +1,148 @@
+@device-gold: #f7e8dd;
+@device-rosegold: #facfc9;
+@device-spacegray: #9b9ba0;
+@device-silver: #e2e3e4;
+
+@device-ipad-cover: url('../imgs/ipad-pro-cover.jpg');
+@device-watch-cover: url('../imgs/apple-watch-cover.jpg');
+
+@font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3",
+              'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: @font-family;
+}
+ol, ul {
+  list-style: none;
+}
+
+.ipad-color-wrapper {
+  text-align: center;
+  padding: 13px 0;
+  .color-dots {
+    display: inline-block;
+    list-style: none;
+    .dot {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 4px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      cursor: pointer;
+      &.current {
+        box-shadow: 0 0 0 2px #0070c9;
+      }
+      &.gold {
+        background: @device-gold;
+      }
+      &.rosegold {
+        background: @device-rosegold;
+      }
+      &.spacegray {
+        background: @device-spacegray;
+      }
+      &.silver {
+        background: @device-silver;
+      }
+    }
+  }
+}
+
+.ipad-pro-wrapper {
+  /*display: none;*/
+  position: absolute;
+  top: 52%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  .device-frame {
+    transition: all 0.1s ease-in-out;
+  }
+  .device-content {
+    .homeCover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-image: @device-ipad-cover;
+      background-size: 100% 100%;
+      transition: all 0.4s ease-in-out;
+      &.open {
+        transform: translateY(-100%);
+      }
+      .info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #fff;
+        transition: all 0.4s ease-in-out;
+        &.open {
+          opacity: 0;
+          .title {
+            transform: scale(0);
+          }
+        }
+        .title {
+          margin-bottom: 180px;
+          text-shadow: 0 0 10px rgba(152 ,251 ,152, 0.9);
+          color: rgba(255, 255, 255, 0.85);
+          font-size: 56px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          transition: all 0.4s ease-in-out;
+        }
+        .unlock-tip {
+          color: rgba(255, 255, 255, 0.85);
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .device-homeBtn {
+    cursor: pointer;
+  }
+}
+
+.apple-watch-wrapper {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  transform: translate(0, -50%);
+  /*display: none;*/
+  .device-content {
+    .homeCover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: @device-watch-cover;
+      background-size: 100% 100%;
+      .date {
+        position: absolute;
+        right: 11px;
+        bottom: 40px;
+        color: #fff;
+        font-size: 13px;
+      }
+      .time {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: #fff;
+        font-size: 26px;
+      }
+    }
+  }
+}
