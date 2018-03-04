@@ -1,16 +1,33 @@
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
-html,
-body {
-  width: 100%;
-  height: 100%;
-  font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+main,
+section,
+header,
+footer {
+  display: block;
 }
 ol,
 ul {
   list-style: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  color: #fff;
+  background: #00b38a;
+}
+::-moz-selection {
+  color: #fff;
+  background: #00b38a;
 }
 .ipad-color-wrapper {
   text-align: center;
@@ -45,7 +62,6 @@ ul {
   background: #e2e3e4;
 }
 .ipad-pro-wrapper {
-  /*display: none;*/
   position: absolute;
   top: 52%;
   left: 52%;
@@ -54,6 +70,9 @@ ul {
 .ipad-pro-wrapper .device-frame {
   transition: all 0.1s ease-in-out;
 }
+.ipad-pro-wrapper .device-content {
+  font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+}
 .ipad-pro-wrapper .device-content .homeCover {
   position: absolute;
   top: 0;
@@ -61,6 +80,7 @@ ul {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: 10;
   background-image: url('../imgs/ipad-pro-cover.jpg');
   background-size: 100% 100%;
   transition: all 0.4s ease-in-out;
@@ -97,6 +117,14 @@ ul {
   color: rgba(255, 255, 255, 0.85);
   font-size: 18px;
 }
+.ipad-pro-wrapper .device-content .resume {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  line-height: 1.5;
+  font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  background: #dedede;
+}
 .ipad-pro-wrapper .device-homeBtn {
   cursor: pointer;
 }
@@ -105,7 +133,9 @@ ul {
   top: 30%;
   left: 3%;
   transform: translate(0, -50%);
-  /*display: none;*/
+}
+.apple-watch-wrapper .device-content {
+  font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 }
 .apple-watch-wrapper .device-content .homeCover {
   position: absolute;

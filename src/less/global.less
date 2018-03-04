@@ -3,24 +3,44 @@
 @device-spacegray: #9b9ba0;
 @device-silver: #e2e3e4;
 
+@color-font: #333;
+@color-background-gray: lighten(#d1d1d1, 5%);
+@color-background-green: #00b38a;
+
 @device-ipad-cover: url('../imgs/ipad-pro-cover.jpg');
 @device-watch-cover: url('../imgs/apple-watch-cover.jpg');
 
-@font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3",
-              'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+@font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+
 
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
-html, body {
-  width: 100%;
-  height: 100%;
-  font-family: @font-family;
+main, section, header, footer {
+  display: block;
 }
 ol, ul {
   list-style: none;
 }
+body {
+  width: 100%;
+  height: 100%;
+  color: @color-font;
+  font-size: 14px;
+  font-family: @font-family;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  color: #fff;
+  background: @color-background-green;
+}
+::-moz-selection {
+  color: #fff;
+  background: @color-background-green;
+}
+
 
 .ipad-color-wrapper {
   text-align: center;
@@ -55,8 +75,8 @@ ol, ul {
   }
 }
 
+
 .ipad-pro-wrapper {
-  /*display: none;*/
   position: absolute;
   top: 52%;
   left: 52%;
@@ -65,6 +85,7 @@ ol, ul {
     transition: all 0.1s ease-in-out;
   }
   .device-content {
+    font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", @font-family;
     .homeCover {
       position: absolute;
       top: 0;
@@ -72,6 +93,7 @@ ol, ul {
       width: 100%;
       height: 100%;
       overflow: hidden;
+      z-index: 10;
       background-image: @device-ipad-cover;
       background-size: 100% 100%;
       transition: all 0.4s ease-in-out;
@@ -108,19 +130,28 @@ ol, ul {
         }
       }
     }
+    .resume {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      line-height: 1.5;
+      font-family: @font-family;
+      background: @color-background-gray;
+    }
   }
   .device-homeBtn {
     cursor: pointer;
   }
 }
 
+
 .apple-watch-wrapper {
   position: absolute;
   top: 30%;
   left: 3%;
   transform: translate(0, -50%);
-  /*display: none;*/
   .device-content {
+    font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", @font-family;
     .homeCover {
       position: absolute;
       top: 0;
