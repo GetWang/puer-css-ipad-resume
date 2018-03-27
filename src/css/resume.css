@@ -169,24 +169,38 @@
 .device-ipad-pro .resume .content .content-main .content-left {
   float: left;
 }
+.device-ipad-pro .resume .content .content-main .content-left .projt.projt-resume .projt-head {
+  text-align: left;
+}
 .device-ipad-pro .resume .content .content-main .content-left .projt .projt-head {
   position: relative;
   height: 20px;
   overflow: hidden;
   padding: 10px 0 5px;
+  text-align: center;
+}
+.device-ipad-pro .resume .content .content-main .content-left .projt .projt-head .projt-date {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 20px;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  transform: translateY(-8px);
 }
 .device-ipad-pro .resume .content .content-main .content-left .projt .projt-head .projt-title {
   display: inline-block;
   height: 20px;
   overflow: hidden;
   color: #000;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 24px;
 }
 .device-ipad-pro .resume .content .content-main .content-left .projt .projt-head .projt-title i {
   color: #00b38a;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
 }
 .device-ipad-pro .resume .content .content-main .content-left .projt .projt-head .projt-link {
@@ -214,7 +228,7 @@
   position: relative;
   margin-top: 2px;
   overflow: hidden;
-  line-height: 20px;
+  line-height: 24px;
 }
 .device-ipad-pro .resume .content .content-main .content-left .projt .projt-content .list .item .icon-dot {
   position: absolute;
@@ -261,7 +275,7 @@
 .device-ipad-pro .resume .content .content-main .content-right .skill .list .item {
   position: relative;
   margin-bottom: 5px;
-  line-height: 22px;
+  line-height: 24px;
 }
 .device-ipad-pro .resume .content .content-main .content-right .skill .list .item .icon-dot {
   position: absolute;

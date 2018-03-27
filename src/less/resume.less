@@ -132,7 +132,7 @@
               position: absolute;
               top: 50%;
               width: 35%;
-              height:0;
+              height: 0;
               border-top: 1px solid @color-background-gray;
             }
             .left-line {
@@ -178,22 +178,38 @@
         .content-left {
           float: left;
           .projt {
+            &.projt-resume {
+              .projt-head {
+                text-align: left;
+              }
+            }
             .projt-head {
               position: relative;
               height: 20px;
               overflow: hidden;
               padding: 10px 0 5px;
+              text-align: center;
+              .projt-date {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                height: 20px;
+                color: #000;
+                font-size: 14px;
+                line-height: 20px;
+                transform: translateY(-8px);
+              }
               .projt-title {
                 display: inline-block;
                 height: 20px;
                 overflow: hidden;
                 color: #000;
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 500;
-                line-height: 20px;
+                line-height: 24px;
                 i {
                   color: @color-background-green;
-                  font-size: 14px;
+                  font-size: 12px;
                   font-style: normal;
                 }
               }
@@ -225,7 +241,7 @@
                   position: relative;
                   margin-top: 2px;
                   overflow: hidden;
-                  line-height: 20px;
+                  line-height: 24px;
                   .icon-dot {
                     position: absolute;
                     left: 0;
@@ -277,7 +293,7 @@
               .item {
                 position: relative;
                 margin-bottom: 5px;
-                line-height: 22px;
+                line-height: 24px;
                 .icon-dot {
                   position: absolute;
                   left: 0;
