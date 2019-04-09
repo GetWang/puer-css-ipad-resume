@@ -67,6 +67,7 @@
   box-sizing: border-box;
   padding-left: 5px;
   text-align: center;
+  font-size: 16px;
   line-height: 22px;
 }
 .device-ipad-pro .resume .content .content-head .contact {
@@ -86,7 +87,7 @@
   text-decoration: none;
   color: #fff;
   line-height: 22px;
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 }
 .device-ipad-pro .resume .content .content-head .contact .link-list > .link-item > a:hover {
@@ -100,7 +101,7 @@
   margin-right: 2px;
 }
 .device-ipad-pro .resume .content .content-head .contact .link-list > .link-item > a [class*="icon-"] {
-  font-size: 20px;
+  font-size: 22px;
 }
 .device-ipad-pro .resume .content .content-main {
   width: 100%;
@@ -119,14 +120,14 @@
 }
 .device-ipad-pro .resume .content .content-main section .section-head {
   position: relative;
-  height: 33px;
+  height: 35px;
   margin: 10px 0 5px;
 }
 .device-ipad-pro .resume .content .content-main section .section-head .left-line,
 .device-ipad-pro .resume .content .content-main section .section-head .right-line {
   position: absolute;
   top: 50%;
-  width: 35%;
+  width: 34%;
   height: 0;
   border-top: 1px solid #dedede;
 }
@@ -139,8 +140,8 @@
 .device-ipad-pro .resume .content .content-main section .section-head .section-title {
   position: relative;
   z-index: 1;
-  width: 24%;
-  height: 33px;
+  width: 26%;
+  height: 35px;
   box-sizing: border-box;
   min-width: 100px;
   overflow: hidden;
@@ -149,9 +150,9 @@
   border-radius: 32px;
   text-align: center;
   color: #000;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 500;
-  line-height: 33px;
+  line-height: 35px;
   background: #dedede;
 }
 .device-ipad-pro .resume .content .content-main section .section-main em {
@@ -160,141 +161,198 @@
   padding: 0 3px;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-family: Menlo, 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
-  line-height: 14px;
+  line-height: 16px;
   background: #f7f7f7;
 }
 .device-ipad-pro .resume .content .content-main .content-left {
   float: left;
 }
-.device-ipad-pro .resume .content .content-main .content-left .projt.projt-resume .projt-head {
-  text-align: left;
-}
-.device-ipad-pro .resume .content .content-main .content-left .projt .projt-head {
+.device-ipad-pro .resume .content .content-main .content-left .work .work-head {
   position: relative;
   height: 20px;
   overflow: hidden;
   padding: 10px 0 5px;
-  text-align: center;
-}
-.device-ipad-pro .resume .content .content-main .content-left .projt .projt-head .projt-date {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 20px;
-  color: #000;
-  font-size: 14px;
   line-height: 20px;
-  transform: translateY(-8px);
 }
-.device-ipad-pro .resume .content .content-main .content-left .projt .projt-head .projt-title {
-  display: inline-block;
+.device-ipad-pro .resume .content .content-main .content-left .work .work-head .work-title {
+  float: left;
   height: 20px;
   overflow: hidden;
   color: #000;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 20px;
 }
-.device-ipad-pro .resume .content .content-main .content-left .projt .projt-head .projt-title i {
+.device-ipad-pro .resume .content .content-main .content-left .work .work-head .work-date {
+  float: left;
+  height: 20px;
+  color: #000;
+  font-size: 15px;
+  line-height: 20px;
+}
+.device-ipad-pro .resume .content .content-main .content-left .work .projt {
+  margin-top: 3px;
+}
+.device-ipad-pro .resume .content .content-main .content-left .work .projt .projt-name {
+  height: 20px;
+  overflow: hidden;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+.device-ipad-pro .resume .content .content-main .content-left .work .projt .projt-name i {
   color: #00b38a;
-  font-size: 12px;
+  font-size: 15px;
   font-style: normal;
 }
-.device-ipad-pro .resume .content .content-main .content-left .projt .projt-head .projt-link {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  height: 20px;
-  box-sizing: border-box;
-  margin-left: 5px;
-  padding: 0 5px;
-  border: 1px solid #00b38a;
-  border-radius: 3px;
-  text-decoration: none;
-  color: #00b38a;
-  line-height: 18px;
-  font-family: Menlo, 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
-  transform: translateY(-8px);
-  transition: all 0.2s ease-in-out;
-}
-.device-ipad-pro .resume .content .content-main .content-left .projt .projt-head .projt-link:hover {
-  color: #fff;
-  background: #00b38a;
-}
-.device-ipad-pro .resume .content .content-main .content-left .projt .projt-content .list .item {
+.device-ipad-pro .resume .content .content-main .content-left .work .projt .detail-list .detail-item {
   position: relative;
   margin-top: 2px;
   overflow: hidden;
-  line-height: 24px;
+  line-height: 26px;
 }
-.device-ipad-pro .resume .content .content-main .content-left .projt .projt-content .list .item .icon-dot {
+.device-ipad-pro .resume .content .content-main .content-left .work .projt .detail-list .detail-item .icon-dot {
   position: absolute;
   left: 0;
   top: 0;
   color: #000;
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 22px;
 }
-.device-ipad-pro .resume .content .content-main .content-left .projt .projt-content .list .item .desc {
+.device-ipad-pro .resume .content .content-main .content-left .work .projt .detail-list .detail-item .desc {
   display: inline-block;
   margin-left: 20px;
+  font-size: 16px;
+  text-align: justify;
+  word-break: break-all;
+}
+.device-ipad-pro .resume .content .content-main .content-left .skill .list {
+  padding: 10px 0 5px;
+}
+.device-ipad-pro .resume .content .content-main .content-left .skill .list .item {
+  position: relative;
+  margin-bottom: 5px;
+  line-height: 26px;
+}
+.device-ipad-pro .resume .content .content-main .content-left .skill .list .item .icon-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00b38a;
+  font-size: 19px;
+  line-height: 22px;
+}
+.device-ipad-pro .resume .content .content-main .content-left .skill .list .item .desc {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 16px;
   text-align: justify;
   word-break: break-all;
 }
 .device-ipad-pro .resume .content .content-main .content-right {
   float: right;
 }
+.device-ipad-pro .resume .content .content-main .content-right .projt .projt-head {
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  padding: 10px 0 5px;
+}
+.device-ipad-pro .resume .content .content-main .content-right .projt .projt-head .projt-date {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 20px;
+  color: #000;
+  font-size: 15px;
+  line-height: 20px;
+  transform: translateY(-8px);
+}
+.device-ipad-pro .resume .content .content-main .content-right .projt .projt-head .projt-title {
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.device-ipad-pro .resume .content .content-main .content-right .projt .projt-head .projt-title i {
+  color: #00b38a;
+  font-size: 15px;
+  font-style: normal;
+}
+.device-ipad-pro .resume .content .content-main .content-right .projt .projt-head .projt-link {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 20px;
+  box-sizing: border-box;
+  margin-left: 5px;
+  padding: 0 7px;
+  border: 1px solid #00b38a;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #00b38a;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: Menlo, 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  transform: translateY(-8px);
+  transition: all 0.2s ease-in-out;
+}
+.device-ipad-pro .resume .content .content-main .content-right .projt .projt-head .projt-link:hover {
+  color: #fff;
+  background: #00b38a;
+}
+.device-ipad-pro .resume .content .content-main .content-right .projt .projt-content .list .item {
+  position: relative;
+  margin-top: 2px;
+  overflow: hidden;
+  line-height: 26px;
+}
+.device-ipad-pro .resume .content .content-main .content-right .projt .projt-content .list .item .icon-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #000;
+  font-size: 19px;
+  line-height: 22px;
+}
+.device-ipad-pro .resume .content .content-main .content-right .projt .projt-content .list .item .desc {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 16px;
+  text-align: justify;
+  word-break: break-all;
+}
 .device-ipad-pro .resume .content .content-main .content-right .reward .list {
   padding-bottom: 5px;
 }
 .device-ipad-pro .resume .content .content-main .content-right .reward .list .item {
   position: relative;
-  margin-top: 17px;
+  margin-top: 13px;
   overflow: hidden;
-  line-height: 20px;
+  line-height: 26px;
 }
 .device-ipad-pro .resume .content .content-main .content-right .reward .list .item .icon-dot {
   position: absolute;
   top: 0;
   left: 0;
   color: #00b38a;
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 22px;
 }
 .device-ipad-pro .resume .content .content-main .content-right .reward .list .item .desc {
   display: inline-block;
   margin-left: 20px;
   text-align: justify;
   word-break: break-all;
-  font-size: 15px;
-}
-.device-ipad-pro .resume .content .content-main .content-right .skill .list {
-  padding: 10px 0 5px;
-}
-.device-ipad-pro .resume .content .content-main .content-right .skill .list .item {
-  position: relative;
-  margin-bottom: 5px;
-  line-height: 24px;
-}
-.device-ipad-pro .resume .content .content-main .content-right .skill .list .item .icon-dot {
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #00b38a;
-  font-size: 18px;
-}
-.device-ipad-pro .resume .content .content-main .content-right .skill .list .item .desc {
-  display: inline-block;
-  margin-left: 20px;
-  text-align: justify;
-  word-break: break-all;
-}
-.device-ipad-pro .resume .content .content-main .content-right .self-desc .desc {
-  padding: 10px 0 5px;
-  text-align: justify;
-  word-break: break-all;
-  line-height: 24px;
+  font-size: 16px;
 }
 .device-ipad-pro .resume .footer-link {
   padding: 40px 0 25px;

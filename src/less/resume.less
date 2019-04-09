@@ -74,6 +74,7 @@
           box-sizing: border-box;
           padding-left: 5px;
           text-align: center;
+          font-size: 16px;
           line-height: 22px;
         }
         .contact {
@@ -90,7 +91,7 @@
                 text-decoration: none;
                 color: #fff;
                 line-height: 22px;
-                font-size: 16px;
+                font-size: 17px;
                 font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", @font-family;
                 &:hover {
                   color: @color-background-gray;
@@ -103,7 +104,7 @@
                   margin-right: 2px;
                 }
                 [class*="icon-"] {
-                  font-size: 20px;
+                  font-size: 22px;
                 }
               }
             }
@@ -125,13 +126,13 @@
           padding: 10px 15px;
           .section-head {
             position: relative;
-            height: 33px;
+            height: 35px;
             margin: 10px 0 5px;
             .left-line,
             .right-line {
               position: absolute;
               top: 50%;
-              width: 35%;
+              width: 34%;
               height: 0;
               border-top: 1px solid @color-background-gray;
             }
@@ -144,8 +145,8 @@
             .section-title {
               position: relative;
               z-index: 1;
-              width: 24%;
-              height: 33px;
+              width: 26%;
+              height: 35px;
               box-sizing: border-box;
               min-width: 100px;
               overflow: hidden;
@@ -154,9 +155,9 @@
               border-radius: 32px;
               text-align: center;
               color: #000;
-              font-size: 16px;
+              font-size: 19px;
               font-weight: 500;
-              line-height: 33px;
+              line-height: 35px;
               background: @color-background-gray;
             }
           }
@@ -167,35 +168,122 @@
               padding: 0 3px;
               border: 1px solid darken(@color-background-gray, 2%);
               border-radius: 3px;
-              font-size: 12px;
+              font-size: 14px;
               font-style: normal;
               font-family: Menlo, @font-family;
-              line-height: 14px;
+              line-height: 16px;
               background: #f7f7f7;
             }
           }
         }
         .content-left {
           float: left;
-          .projt {
-            &.projt-resume {
-              .projt-head {
-                text-align: left;
+          .work {
+            .work-head {
+              position: relative;
+              height: 20px;
+              overflow: hidden;
+              padding: 10px 0 5px;
+              line-height: 20px;
+              .work-title {
+                float: left;
+                height: 20px;
+                overflow: hidden;
+                color: #000;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 20px;
+              }
+              .work-date {
+                float: left;
+                height: 20px;
+                color: #000;
+                font-size: 15px;
+                line-height: 20px;
               }
             }
+            .projt {
+              margin-top: 3px;
+              .projt-name {
+                height: 20px;
+                overflow: hidden;
+                color: #000;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                text-align: center;
+                i {
+                  color: @color-background-green;
+                  font-size: 15px;
+                  font-style: normal;
+                }
+              }
+              .detail-list {
+                .detail-item {
+                  position: relative;
+                  margin-top: 2px;
+                  overflow: hidden;
+                  line-height: 26px;
+                  .icon-dot {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    color: #000;
+                    font-size: 19px;
+                    line-height: 22px;
+                  }
+                  .desc {
+                    display: inline-block;
+                    margin-left: 20px;
+                    font-size: 16px;
+                    text-align: justify;
+                    word-break: break-all;
+                  }
+                }
+              }
+            }
+          }
+          .skill {
+            .list {
+              padding: 10px 0 5px;
+              .item {
+                position: relative;
+                margin-bottom: 5px;
+                line-height: 26px;
+                .icon-dot {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  color: @color-background-green;
+                  font-size: 19px;
+                  line-height: 22px;
+                }
+                .desc {
+                  display: inline-block;
+                  margin-left: 20px;
+                  font-size: 16px;
+                  text-align: justify;
+                  word-break: break-all;
+                }
+              }
+            }
+          }
+        }
+        .content-right {
+          float: right;
+          .projt {
             .projt-head {
               position: relative;
               height: 20px;
               overflow: hidden;
               padding: 10px 0 5px;
-              text-align: center;
               .projt-date {
                 position: absolute;
                 left: 0;
                 top: 50%;
                 height: 20px;
                 color: #000;
-                font-size: 14px;
+                font-size: 15px;
                 line-height: 20px;
                 transform: translateY(-8px);
               }
@@ -204,12 +292,12 @@
                 height: 20px;
                 overflow: hidden;
                 color: #000;
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 500;
-                line-height: 24px;
+                line-height: 20px;
                 i {
                   color: @color-background-green;
-                  font-size: 12px;
+                  font-size: 15px;
                   font-style: normal;
                 }
               }
@@ -220,11 +308,12 @@
                 height: 20px;
                 box-sizing: border-box;
                 margin-left: 5px;
-                padding: 0 5px;
+                padding: 0 7px;
                 border: 1px solid @color-background-green;
                 border-radius: 3px;
                 text-decoration: none;
                 color: @color-background-green;
+                font-size: 15px;
                 line-height: 18px;
                 font-family: Menlo, @font-family;
                 transform: translateY(-8px);
@@ -241,17 +330,19 @@
                   position: relative;
                   margin-top: 2px;
                   overflow: hidden;
-                  line-height: 24px;
+                  line-height: 26px;
                   .icon-dot {
                     position: absolute;
                     left: 0;
                     top: 0;
                     color: #000;
-                    font-size: 18px;
+                    font-size: 19px;
+                    line-height: 22px;
                   }
                   .desc {
                     display: inline-block;
                     margin-left: 20px;
+                    font-size: 16px;
                     text-align: justify;
                     word-break: break-all;
                   }
@@ -259,63 +350,30 @@
               }
             }
           }
-        }
-        .content-right {
-          float: right;
           .reward {
             .list {
               padding-bottom: 5px;
               .item {
                 position: relative;
-                margin-top: 17px;
+                margin-top: 13px;
                 overflow: hidden;
-                line-height: 20px;
+                line-height: 26px;
                 .icon-dot {
                   position: absolute;
                   top: 0;
                   left: 0;
                   color: @color-background-green;
-                  font-size: 18px;
+                  font-size: 19px;
+                  line-height: 22px;
                 }
                 .desc {
                   display: inline-block;
                   margin-left: 20px;
                   text-align: justify;
                   word-break: break-all;
-                  font-size: 15px;
+                  font-size: 16px;
                 }
               }
-            }
-          }
-          .skill {
-            .list {
-              padding: 10px 0 5px;
-              .item {
-                position: relative;
-                margin-bottom: 5px;
-                line-height: 24px;
-                .icon-dot {
-                  position: absolute;
-                  left: 0;
-                  top: 0;
-                  color: @color-background-green;
-                  font-size: 18px;
-                }
-                .desc {
-                  display: inline-block;
-                  margin-left: 20px;
-                  text-align: justify;
-                  word-break: break-all;
-                }
-              }
-            }
-          }
-          .self-desc {
-            .desc {
-              padding: 10px 0 5px;
-              text-align: justify;
-              word-break: break-all;
-              line-height: 24px;
             }
           }
         }
